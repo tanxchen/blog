@@ -1,0 +1,20 @@
+extends ../layout
+block content
+    form.form-horizontal(method="POST", action="/admin/article/new")
+        input(type="hidden", name="article[_id]", value="#{article._id}")
+        .form-group
+            label.col-sm-2.control-label(for="inputTitle") 文章标题
+            .col-sm-10
+                input#inputTitle.form-control(type="text", name="article[title]", value="#{article.title}")
+        .form-group
+            label.col-sm-2.control-label(for="inputLabel") 标签
+            .col-sm-6
+                input#inputDoctor.form-control(type="text", name="article[label]", value="#{article.label}")
+                input.hidden-content(type="hidden", name="article[label]", value="#{article.content}")
+            button.btn.btn-info.admin-insert(type="submit") 发布
+        textarea(id="tinymceEditer", name="tinymceEditer", cols="30", rows="10", value="#{article.content}")
+        .form-group
+            .col-sm-offset-2.col-sm-10
+        script(src="https://cdn.bootcss.com/tinymce/4.7.9/tinymce.min.js")
+        script(src="/static/js/admin.js")
+        script(src="/static/js/zh_CN.GB2312.js")

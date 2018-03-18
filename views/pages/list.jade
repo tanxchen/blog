@@ -1,0 +1,24 @@
+extends ../layout
+block content
+    table.table.table-hover.table-bordered
+        thead
+            tr
+                th 文章标题
+                th 标签
+                th 内容
+                th 录入时间
+                th 查看
+                th 更新
+                th 刪除
+        tbody
+            each item in articles
+                tr(class="item-id-#{item._id}")
+                    td #{item.title}
+                    td #{item.label}
+                    td #{item.content}
+                    td #{moment(item.meta.updateAt).format('YYYY-MM-DD')}
+                    td: a.btn.btn-success(target="_blank", href="../article/#{item.id}") 查看
+                    td: a.btn.btn-info(target="_blank", href="../admin/update/#{item.id}") 修改
+                    td
+                        button.btn.btn-danger.del(type="button", data-id="#{item._id}") 刪除
+    script(src="/static/js/admin.js")

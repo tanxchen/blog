@@ -4,5 +4,5 @@ block content
         article.article
             a(href="/article/#{item._id}"): h3 #{item.title}
             i.fa.fa-calendar(aria-hidden="true")  #{moment(item.meta.createAt).format('YYYY-MM-DD')}
-            h5 摘要：#{item.content}
+            h5 !{item.content}
             p: a.btn.btn-default.read-detail(href="/article/#{item._id}", role="button") 阅读全文 #[i.fa.fa-angle-double-right(aria-hidden="true")]

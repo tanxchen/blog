@@ -2,6 +2,5 @@ extends ../layout
 block content
     h3 #{article.title}
     i.fa.fa-calendar(aria-hidden="true")  发布时间：#{moment(article.meta.createAt).format('YYYY-MM-DD')}
-    span 标签：
-    h5 #{article.content}
-    pre=article.content
+    span &nbsp;标签：#{article.label}
+    div !{article.content}

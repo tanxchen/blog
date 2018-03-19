@@ -55,7 +55,19 @@ app.post('/admin/article/new', (req, res) => {
     console.log(req.body)
     const id = req.body.article._id
     const articleObj = req.body.article
-    let _article
+		let _article
+		if (articleObj.content) {
+			var REG_BODY = /<body[^>]*>([\s\S]*)<\/body>/;
+
+			function getBody(content){
+					var result = REG_BODY.exec(content);
+					if(result && result.length === 2)
+							return result[1];
+					return content;
+			}
+			articleObj.content = getBody(articleObj.content)
+		}
+		console.log(articleObj.content);
     if (id !== 'undefined') {
 			Article.findById(id, (err, article) => {
 				if (err){

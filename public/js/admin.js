@@ -1,12 +1,12 @@
 $(function () {
     $('.del').click(function (e) {
-        var target= $(e.target);
-        var id=target.data('id');
-        var tr=$('.item-id-'+id);
+        var target = $(e.target);
+        var id = target.data('id');
+        var tr = $('.item-id-' + id);
         console.log(e);
         $.ajax({
-            type:'DELETE',
-            url:'/admin/list?id='+id
+            type: 'DELETE',
+            url: '/admin/list?id=' + id
         })
             .done(function (results) {
                 if(results.success === 1){
@@ -16,6 +16,27 @@ $(function () {
                 }
             })
     })
+    // $('#articleSubmit').on('click', function() {
+    //     console.log($('#inputTitle').val())
+    //     console.log($('#inputLabel').val())
+    //     console.log(tinymce.get('tinymceEditer').getContent())
+    //     $.ajax({
+    //         type: 'POST',
+    //         url: '/admin/article/new',
+    //         data: {
+    //             title: $('#inputTitle').val(),
+	// 			label: $('#inputLabel').val(),
+	// 			content: tinymce.get('tinymceEditer').getContent()
+    //         }
+    //     })
+    //         .done(function (results) {
+    //             if(results.success === 1){
+    //                 if(tr.length>0){
+    //                     tr.remove();
+    //                 }
+    //             }
+    //         })
+    // })
     tinymce.init({
         selector: '#tinymceEditer',
         branding: false,

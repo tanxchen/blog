@@ -1,4 +1,4 @@
-# nuxt-demo
+# blog build by nuxt/express + mongodb
 
 > Nuxt.js project
 

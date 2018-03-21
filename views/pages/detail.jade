@@ -1,6 +1,0 @@
-extends ../layout
-block content
-    h3 #{article.title}
-    i.fa.fa-calendar(aria-hidden="true")  发布时间：#{moment(article.meta.createAt).format('YYYY-MM-DD')}
-    span &nbsp;标签：#{article.label}
-    div !{article.content}

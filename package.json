@@ -1,31 +1,25 @@
 {
-  "name": "ryanxchen-blog",
+  "name": "nuxt-demo",
   "version": "1.0.0",
-  "description": "ryanxchen's blog",
-  "main": "app.js",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "bower": "^1.8.2",
-    "express": "^4.16.2",
-    "express-favicon": "^2.0.0",
-    "jade": "^1.11.0",
-    "moment": "^2.20.1",
-    "mongoose": "^4.13.7",
-    "serve-static": "^1.13.1",
-    "underscore": "^1.8.3"
-  },
-  "devDependencies": {},
+  "description": "Nuxt.js project",
+  "author": "chenxuantian <chenxuantian@yunteck.cn>",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ryanschen/blog.git"
+  "dependencies": {
+    "nuxt": "^1.0.0"
   },
-  "keywords": [
-    "blog",
-    "article"
-  ],
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0"
+  }
 }

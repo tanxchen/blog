@@ -1,0 +1,117 @@
+
+.mdcontent h1,.mdcontent h2,.mdcontent h3,.mdcontent h4,.mdcontent h5,.mdcontent h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+.mdcontent h1,.mdcontent h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+.mdcontent h1 {
+  font-size: 2em;
+}
+.mdcontent h2 {
+  font-size: 1.5em;
+}
+.mdcontent code {
+  background-color: #f6f8fa;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+.mdcontent code a {
+  background-color: rgba(27,31,35,.05);
+}
+.mdcontent p {
+  margin: 6px 0;
+}
+.mdcontent blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+.mdcontent ul,.mdcontent li {
+  margin: initial;
+  padding: initial;
+}
+.mdcontent ul {
+  padding-left: 2em;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+.mdcontent li {
+  list-style: initial;
+}
+.mdcontent img {
+  max-width: 100%;
+}
+.mdcontent table {
+  margin-bottom: 16px;
+  margin-top: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.mdcontent table th,.mdcontent table td {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+  text-align: center;
+}
+.mdcontent pre, .mdcontent pre[class*="language-"] {
+  border: 1px #eaecef solid;
+  background-color: #f6f8fa;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  margin: 10px 0;
+}
+
+.token.selector, .token.important, .token.atrule, .token.keyword, .token.builtin {
+  color: #E91E63;
+}
+
+.mdcontent pre code, .mdcontent pre[class*="language-"] code {
+  color: #525252;
+}
+
+.token.string, .token.char, .token.attr-value, .token.regex, .token.variable {
+  color: #389d70;
+}
+
+.token.punctuation {
+  color: #2973b7;
+}
+
+.token.boolean, .token.number, .token.function {
+  color: #e96900;
+}
+
+.token.comment, .token.block-comment, .token.prolog, .token.doctype, .token.cdata {
+  color: #b3b3b3;
+}
+
+.token.operator, .token.entity, .token.url {
+  color: #cd6767;
+}
+
+.token.tag {
+  color: #3ca0e6;
+}
+
+.token.attr-name, .token.namespace, .token.deleted {
+  color: #fc9153;
+}
+
+.token.punctuation {
+  color: #666666;
+}
+
+.token.string, .token.char, .token.attr-value, .token.regex, .token.variable {
+  color: #3fb374;
+}
+
+.token.property {
+  color: #4a90e2;
+}

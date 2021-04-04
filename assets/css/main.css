@@ -1,0 +1,93 @@
+html, body
+{
+  background-color: #fff;
+  color: #000;
+  letter-spacing: 0.5px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  margin: 0;
+}
+
+a, a:hover, a:focus, a:visited
+{
+  color: #000;
+  text-decoration: none;
+}
+a.link {
+  color: #2196F3;
+}
+.post {
+  padding: 25px 0 15px;
+}
+.post .post-title {
+  margin: 0;
+  color: #555;
+  text-align: left;
+  font: bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
+}
+.post-title a {
+  position: relative;
+}
+.post-title a:hover::after {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+.post-title a:after {
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+  right: 0px;
+  height: 3px;
+  background: #000;
+  content: '';
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.1s ease-in;
+  -webkit-transform: scale3d(0, 1, 1);
+  transform: scale3d(0, 1, 1);
+}
+.post .post-meta {
+  padding: 0;
+  margin: 15px 0 0;
+  color: #6E7173;
+  display: inline-block;
+  text-indent: .15em;
+}
+.post .post-meta:before {
+  font-family: "FontAwesome";
+  content: "\f073";
+  padding-right: 0.3em;
+}
+.post .post-content {
+  clear: left;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+  padding-top: 15px;
+  text-align: justify;
+  word-break: break-all;
+}
+.readmore {
+  padding: 20px 0;
+  text-align: right;
+}
+.readmore a {
+  font-size: 14px;
+  color: #444;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.readmore a:hover {
+  border: 1px solid #999;
+}
+.readmore a:after {
+  font-family: "FontAwesome";
+  content: "\f101";
+  padding-left: 0.3em;
+}
+
+.blog-comments-wrap {
+  padding-bottom: 20px;
+}

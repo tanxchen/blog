@@ -1,3 +1,5 @@
+const routerBsae = process.env.NODE_ENV === 'production' ? '/blog/' : '/'
+
 export default {
   components: true,
   /*
@@ -56,6 +58,6 @@ export default {
   },
   target: 'static',
   router: {
-    base: '/blog/'
+    base: routerBsae
   }
 }

@@ -55,8 +55,8 @@ export default {
       clientID: '3cc18428738157f74e62',
       clientSecret: 'a0a0eb91a60115f5ee8ae31007590ac9d1163c6e',
       repo: 'blog-comments',
-      owner: 'ryanschen',
-      admin: ['ryanschen'],
+      owner: 'ryanxchen',
+      admin: ['ryanxchen'],
       id: location.pathname,
       distractionFreeMode: false
     })

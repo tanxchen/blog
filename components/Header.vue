@@ -1,24 +1,24 @@
 <template>
   <div class="bl-header">
     <div class="site-name">
-      <nuxt-link to="/">
+      <NuxtLink to="/">
         <img src="~assets/img/logo_200_200.png" alt="logo" style="width:40px;height:40px;border-radius:5px;">
-      </nuxt-link>
+      </NuxtLink>
       <p class="description">Stay Hungry. Stay Foolish.</p>
     </div>
     <div class="nav-menu">
-      <nuxt-link to="/" class="current">
+      <NuxtLink to="/" class="current">
         <i class="fa fa-home"> 首页</i>
-      </nuxt-link>
+      </NuxtLink>
       <!-- <nuxt-link to="/archives">
         <i class="fa fa-archive"> 归档</i>
       </nuxt-link> -->
       <!-- <nuxt-link to="/friends">
         <i class="fa fa-archive"> 友链</i>
       </nuxt-link> -->
-      <nuxt-link to="/about">
+      <NuxtLink to="/about">
         <i class="fa fa-user"> 关于</i>
-      </nuxt-link>
+      </NuxtLink>
       <!-- <nuxt-link to="/atom.xml">
         <i class="fa fa-rss"> 订阅</i>
       </nuxt-link> -->

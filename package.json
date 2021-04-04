@@ -4,37 +4,42 @@
   "description": "ryanxchen-blog built on Vue(nuxtjs),nodejs(express),mongodb",
   "author": "ryanxchen <jsryanx@gmail.com>",
   "private": true,
+  "main": "index.js",
   "scripts": {
-    "dev": "backpack dev",
-    "build": "nuxt build && backpack build",
-    "start": "cross-env NODE_ENV=production node build/main.js",
-    "precommit": "npm run lint",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "pm2": "pm2 start build/main.js --env production"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "axios": "^0.16.2",
-    "cross-env": "^5.0.1",
-    "express": "^4.15.3",
-    "markdown-it": "^8.4.2",
-    "mongoose": "^5.0.11",
-    "nuxt": "^1.4.5",
-    "prismjs": "^1.15.0",
-    "source-map-support": "^0.4.15"
+    "axios": "^0.21.1",
+    "markdown-it": "^12.0.4",
+    "nuxt": "^2.15.4",
+    "prismjs": "^1.23.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "backpack-core": "^0.4.1",
     "body-parser": "^1.18.2",
-    "eslint": "^4.3.0",
+    "eslint": "^4.19.1",
     "eslint-config-standard": "^10.2.1",
-    "eslint-loader": "^1.9.0",
+    "eslint-loader": "^2.2.1",
     "eslint-plugin-html": "^3.1.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
-    "stylus": "^0.54.5",
+    "stylus": "^0.54.8",
     "stylus-loader": "^3.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanxchen/blog.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanxchen/blog/issues"
+  },
+  "homepage": "https://github.com/ryanxchen/blog#readme"
 }

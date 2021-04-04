@@ -1,12 +1,12 @@
 <template>
   <div>
-    <nuxt class="body-container" />
+    <Nuxt class="body-container" />
     <bl-footer style="position:relative;margin-top:-60px;"></bl-footer>
   </div>
 </template>
 
 <script>
-import BlFooter from '~/components/Footer.vue'
+import BlFooter from '@/components/Footer.vue'
 export default {
   components: {
     BlFooter

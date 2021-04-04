@@ -1,4 +1,5 @@
-module.exports = {
+export default {
+  components: true,
   /*
   ** Headers of the page
   */
@@ -23,9 +24,9 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    '~/assets/css/reset.css',
-    '~/assets/css/main.css',
-    '~/assets/css/markdown.css',
+    '@/assets/css/reset.css',
+    '@/assets/css/main.css',
+    '@/assets/css/markdown.css',
   ],
   /*
   ** Add axios globally
@@ -36,7 +37,7 @@ module.exports = {
     ** Run ESLINT on save
     */
     extend (config, ctx) {
-      if (ctx.isClient) {
+      if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
@@ -47,6 +48,10 @@ module.exports = {
     }
   },
   plugins: [
-    { src: '~plugins/ga.js', ssr: false }
-  ]
+    { src: '~/plugins/ga.js', ssr: false }
+  ],
+  generate: {
+    dir: 'docs', // gh_pages/ instead of dist/
+    subFolders: false // HTML files are generated according to the route path
+  }
 }

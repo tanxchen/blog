@@ -3,14 +3,14 @@
     <bl-header></bl-header>
     <div class="post" v-for="(article, index) in articles" :key="index">
       <h1 class="post-title">
-        <nuxt-link :to="{ path: `/article/${article._id}` }">
+        <NuxtLink :to="{ path: `/article/${article._id}` }">
           {{ article.title }}
-        </nuxt-link>
+        </NuxtLink>
       </h1>
       <div class="post-meta">{{ article.meta.createDate }}</div>
       <div class="post-content mdcontent desc" v-html="article.content"></div>
       <p class="readmore">
-        <nuxt-link :to="{ path: `/article/${article._id}` }">阅读全文</nuxt-link>
+        <NuxtLink :to="{ path: `/article/${article._id}` }">阅读全文</NuxtLink>
       </p>
     </div>
   </section>
@@ -19,10 +19,16 @@
 <script>
 // import axios from '~/plugins/axios'
 import markdown from '~/plugins/markdown'
-import BlHeader from '~/components/Header.vue'
-import articlesData from '~/data/articles.json'
+import BlHeader from '@/components/Header.vue'
+import articlesData from '@/data/articles.json'
 
 export default {
+  name: 'Index',
+
+  components: {
+    BlHeader
+  },
+
   async asyncData () {
     // let { data } = await axios.get('/api/articles')
     let data = articlesData
@@ -32,10 +38,6 @@ export default {
       })
     }
     return { articles: data }
-  },
-
-  components: {
-    BlHeader
   },
 
   mounted () {

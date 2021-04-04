@@ -15,9 +15,9 @@
 
 <script>
 // import axios from '~/plugins/axios'
-import markdown from '~/plugins/markdown'
-import BlHeader from '~/components/Header.vue'
-import articlesData from '~/data/articles.json'
+import markdown from '@/plugins/markdown'
+import BlHeader from '@/components/Header.vue'
+import articlesData from '@/data/articles.json'
 
 const getArticleById = (id) => {
   return new Promise((resolve, reject) => {

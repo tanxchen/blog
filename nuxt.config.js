@@ -53,5 +53,9 @@ export default {
   generate: {
     dir: 'docs', // gh_pages/ instead of dist/
     subFolders: false // HTML files are generated according to the route path
+  },
+  target: 'static',
+  router: {
+    base: '/blog/'
   }
 }

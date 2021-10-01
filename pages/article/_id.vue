@@ -49,14 +49,14 @@ export default {
   },
 
   mounted () {
-    document.title = this.article.title ? `${this.article.title} | Ryanx` : document.title
+    document.title = this.article.title ? `${this.article.title} | Tanx` : document.title
     // eslint-disable-next-line
     const gitalk = new Gitalk({
       clientID: '3cc18428738157f74e62',
       clientSecret: 'a0a0eb91a60115f5ee8ae31007590ac9d1163c6e',
       repo: 'blog-comments',
-      owner: 'ryanxchen',
-      admin: ['ryanxchen'],
+      owner: 'tanxchen',
+      admin: ['tanxchen'],
       id: location.pathname,
       distractionFreeMode: false
     })

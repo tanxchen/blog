@@ -4,7 +4,7 @@
     <h4 class="h4">关于我</h4>
     <div>
       <p>
-        我是Ryanx Chen。目前在魔都任职前端开发。
+        我是Tanx Chen。目前在魔都任职前端开发。
         喜欢跟小伙伴讨论技术，学习技术，研究技术。
         喜爱前端，喜爱更友善的交互体验。
         喜欢折腾，动手能力强，热爱编程。
@@ -23,14 +23,14 @@
     <hr class="hr-line">
     <h4 class="h4">我的项目</h4>
     <p>
-      <a href="https://ryanxchen.github.io/home/project.html" target="_blank" rel="noopener noreferrer" class="link">
-      https://ryanxchen.github.io/home/project.html
+      <a href="https://tanxchen.github.io/home/project.html" target="_blank" rel="noopener noreferrer" class="link">
+      https://tanxchen.github.io/home/project.html
       </a>
     </p>
     <hr class="hr-line">
     <h4 class="h4">联系我</h4>
     <p style="display: flex;align-items: center;">
-      <a href="https://github.com/ryanxchen" target="_blank" class="github-logo">
+      <a href="https://github.com/tanxchen" target="_blank" class="github-logo">
         <svg height="32" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" 
         width="32" aria-hidden="true">
           <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 
@@ -49,7 +49,7 @@
     </p>
     <hr class="hr-line">
     <p class="create-wrap">
-      发布于2018-12-28&nbsp;&nbsp;&nbsp;&nbsp;最新修改于2021-04-05
+      发布于2018-12-28&nbsp;&nbsp;&nbsp;&nbsp;最新修改于2021-10-01
     </p>
     <div id="about-gitalk-container" class="blog-comments-wrap"></div>
   </div>
@@ -71,14 +71,14 @@ export default {
   },
 
   mounted () {
-    document.title = '关于 | Ryanx'
+    document.title = '关于 | Tanx'
     // eslint-disable-next-line
     const gitalk = new Gitalk({
       clientID: '3cc18428738157f74e62',
       clientSecret: 'a0a0eb91a60115f5ee8ae31007590ac9d1163c6e',
       repo: 'blog-comments',
-      owner: 'ryanxchen',
-      admin: ['ryanxchen'],
+      owner: 'tanxchen',
+      admin: ['tanxchen'],
       id: location.pathname,
       distractionFreeMode: false
     })

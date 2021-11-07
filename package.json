@@ -1,8 +1,8 @@
 {
-  "name": "ryanxchen-blog",
+  "name": "tanxchen-blog",
   "version": "1.0.0",
-  "description": "ryanxchen-blog built on Vue(nuxtjs),nodejs(express),mongodb",
-  "author": "ryanxchen <jsryanx@gmail.com>",
+  "description": "tanxchen-blog built on Vue(nuxtjs),nodejs(express),mongodb",
+  "author": "tanxchen <jsryanx@gmail.com>",
   "private": true,
   "main": "index.js",
   "scripts": {
@@ -35,11 +35,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryanxchen/blog.git"
+    "url": "git+https://github.com/tanxchen/blog.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ryanxchen/blog/issues"
+    "url": "https://github.com/tanxchen/blog/issues"
   },
-  "homepage": "https://github.com/ryanxchen/blog#readme"
+  "homepage": "https://github.com/tanxchen/blog#readme"
 }

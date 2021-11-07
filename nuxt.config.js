@@ -6,12 +6,12 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'RyanxChen\'blog',
+    title: 'TanxChen\'blog',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover' },
       { name: 'keywords', content: 'ryanx chen blog' },
-      { hid: 'description', name: 'description', content: 'Ryanx Chen\'s blog 编程&前端&记录总结个人成长' }
+      { hid: 'description', name: 'description', content: 'Tanx Chen\'s blog 编程&前端&记录总结个人成长' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

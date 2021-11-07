@@ -41,8 +41,8 @@ export default {
   },
 
   mounted () {
-    if (document.title !== 'RyanxChen\'blog') {
-      document.title = 'RyanxChen\'blog'
+    if (document.title !== 'TanxChen\'blog') {
+      document.title = 'TanxChen\'blog'
     }
   }
 }

@@ -13,7 +13,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "markdown-it": "^12.0.4",
     "nuxt": "^2.15.4",
     "prismjs": "^1.23.0"

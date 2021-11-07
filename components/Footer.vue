@@ -2,7 +2,7 @@
   <footer class="bl-footer">
     <div class="footer-wrap">
       <div style="text-align: center;">
-        2018-present © by <a href="http://www.tanxchen.com" target="_blank"
+        2018-present © by <a href="#" target="_blank"
         >TanxChen</a> All Rights Reserved. <a href="http://www.miitbeian.gov.cn" 
         target="_blank">浙ICP备18014267号-1</a>
     </div>

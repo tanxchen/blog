@@ -49,7 +49,7 @@
     </p>
     <hr class="hr-line">
     <p class="create-wrap">
-      发布于2018-12-28&nbsp;&nbsp;&nbsp;&nbsp;最新修改于2021-04-05
+      发布于2018-12-28&nbsp;&nbsp;&nbsp;&nbsp;最新修改于2021-10-01
     </p>
     <div id="about-gitalk-container" class="blog-comments-wrap"></div>
   </div>

@@ -467,12 +467,12 @@ function renderStyles (styles) {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Footer.vue?vue&type=template&id=20c2f284&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('footer',{staticClass:"bl-footer"},[_vm._ssrNode("<div class=\"footer-wrap\"><div style=\"text-align: center;\">\n      2018-present © by <a href=\"http://www.tanxchen.com\" target=\"_blank\">TanxChen</a> All Rights Reserved. <a href=\"http://www.miitbeian.gov.cn\" target=\"_blank\">浙ICP备18014267号-1</a></div></div>")])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Footer.vue?vue&type=template&id=d1c97f00&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('footer',{staticClass:"bl-footer"},[_vm._ssrNode("<div class=\"footer-wrap\"><div style=\"text-align: center;\">\n      2018-present © by <a href=\"#\" target=\"_blank\">TanxChen</a> All Rights Reserved. <a href=\"http://www.miitbeian.gov.cn\" target=\"_blank\">浙ICP备18014267号-1</a></div></div>")])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/Footer.vue?vue&type=template&id=20c2f284&
+// CONCATENATED MODULE: ./components/Footer.vue?vue&type=template&id=d1c97f00&
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 var componentNormalizer = __webpack_require__(2);

@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "backpack-core": "^0.4.1",
+    "backpack-core": "^0.8.4",
     "body-parser": "^1.18.2",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^10.2.1",
